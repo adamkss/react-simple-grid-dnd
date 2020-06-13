@@ -1,0 +1,19 @@
+{
+  "name": "react-simple-grid-dnd",
+  "version": "1.0.0",
+  "description": "A library to create a grid-like container with DND enabled.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamkss/react-simple-grid-dnd.git"
+  },
+  "author": "Adam Kiss",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adamkss/react-simple-grid-dnd/issues"
+  },
+  "homepage": "https://github.com/adamkss/react-simple-grid-dnd#readme"
+}
