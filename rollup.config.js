@@ -10,17 +10,17 @@ export default {
   input: "./src/index.js",
   output: {
     file: outputFile,
-    format: "cjs"
+    format: "cjs",
   },
   plugins: [
     replace({
-      "process.env.NODE_ENV": JSON.stringify(NODE_ENV)
+      "process.env.NODE_ENV": JSON.stringify(NODE_ENV),
     }),
     babel({
-      exclude: "node_modules/**"
+      exclude: "node_modules/**",
     }),
     resolve(),
-    commonjs()
+    commonjs(),
   ],
-  external: id => /^react|react-dom|styled-jsx/.test(id)
+  external: (id) => /^react|react-dom|styled-jsx/.test(id),
 };

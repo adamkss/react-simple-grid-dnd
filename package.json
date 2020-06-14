@@ -5,7 +5,8 @@
   "main": "dist/index.tsx",
   "scripts": {
     "build:dev": "NODE_ENV=development rollup -c",
-    "build:prod": "NODE_ENV=production rollup -c"
+    "build:prod": "NODE_ENV=production rollup -c",
+    "build": "npm run build:dev && npm run build:prod"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,9 @@
     "url": "https://github.com/adamkss/react-simple-grid-dnd/issues"
   },
   "homepage": "https://github.com/adamkss/react-simple-grid-dnd#readme",
-  "dependencies": {},
+  "dependencies": {
+    "styled-jsx": "^3.3.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.10.2",
     "@babel/preset-env": "^7.10.2",
@@ -27,8 +30,7 @@
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-replace": "^2.2.0",
-    "styled-jsx": "^3.3.0"
+    "rollup-plugin-replace": "^2.2.0"
   },
   "peerDependencies": {
     "react": "^16.13.1",
