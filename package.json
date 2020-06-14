@@ -2,9 +2,10 @@
   "name": "react-simple-grid-dnd",
   "version": "1.0.0",
   "description": "A library to create a grid-like container with DND enabled.",
-  "main": "index.js",
+  "main": "dist/index.tsx",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:dev": "NODE_ENV=development rollup -c",
+    "build:prod": "NODE_ENV=production rollup -c"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,22 @@
   "bugs": {
     "url": "https://github.com/adamkss/react-simple-grid-dnd/issues"
   },
-  "homepage": "https://github.com/adamkss/react-simple-grid-dnd#readme"
+  "homepage": "https://github.com/adamkss/react-simple-grid-dnd#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-react": "^7.10.1",
+    "react-dom": "^16.13.1",
+    "rollup": "^2.16.0",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-replace": "^2.2.0",
+    "styled-jsx": "^3.3.0"
+  },
+  "peerDependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
 }
