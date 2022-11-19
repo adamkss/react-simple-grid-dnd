@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/adamkss/react-simple-grid-dnd#readme",
   "dependencies": {
-    "styled-jsx": "^3.3.0"
+    "styled-jsx": "^5.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",
